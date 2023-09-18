@@ -1,7 +1,7 @@
 # config.py
 # This is a dictionary where keys are investor names and values are lists of example prompts for that investor.
 investor_specific_prompts = {
-    "You": {
+    "you": {
         "objectives": [
             "Invest in five promising green tech startups this year."
         ],
@@ -16,4 +16,4 @@ investor_specific_prompts = {
     # Add more investors and their specific tasks as needed
 }
 # Default investor - change this before sending to a specific investor.
-DEFAULT_INVESTOR = "You"
+DEFAULT_INVESTOR = "you"
