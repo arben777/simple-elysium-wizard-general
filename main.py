@@ -288,7 +288,7 @@ def main():
 
             vectorstore = initial_embeddings(openai_api_key, first_task)
 
-            if st.button(" 🪄 Let me perform the magic 👼🏼"):
+            if st.button(" 🪄 Let me perform the magic 🧙"):
                 baby_agi = BabyAGI.from_llm_and_objectives(
                     llm=OpenAI(openai_api_key=openai_api_key),
                     vectorstore=vectorstore,
@@ -296,7 +296,7 @@ def main():
                     first_task=first_task,
                     verbose=False,
                 )
-                with st.spinner("👶 BabyAGI 🤖 at work ..."):
+                with st.spinner("🧙🔮 Elysium Wizard 🤖 at work ..."):
                     baby_agi.run(max_iterations=max_iterations)
 
                 st.balloons()
